@@ -1,0 +1,41 @@
+body {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background: green;
+}
+h1 {
+  margin: auto;
+}
+main {
+  text-align: center;
+  margin: auto;
+}
+
+.cyfra {
+  width: 75px;
+  height: 140px;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+#zero { background: url(output.png) -2px 0; }
+#one { background: url(output.png) -80px 0; }
+#two { background: url(output.png) -158px 0; }
+#three { background: url(output.png) -238px 0; }
+#four { background: url(output.png) -313px 0; }
+#five { background: url(output.png) -391px 0; }
+#six { background: url(output.png) -470px 0; }
+#seven { background: url(output.png) -548px 0; }
+#eight { background: url(output.png) -625px 0; }
+#nine { background: url(output.png) -703px 0; }
+
+table td {
+  border: 2px solid black;
+  height: 140px;
+  width: 75px;
+  cursor: pointer;
+  font-size: 300%;
+}
