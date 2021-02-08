@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="pl"><head>
-	<meta charset="utf-8">
-	<title>LucGor test</title>
-	<meta name="author" content="Adam Paulukanis">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./mocha.css">
-</head><body>
-	<div id="mocha"></div>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>LucGor test</title>
+        <meta name="author" content="Adam Paulukanis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./mocha.css">
+    </head>
+    <body>
+        <div id="mocha"></div>
 
-<script src="./mocha.min.js"></script>
-<script src="./chai.min.js"></script>
+        <script src="./mocha.min.js"></script>
+        <script src="./chai.min.js"></script>
 
-<script>
-const mocha = window.mocha;
-const assert = window.chai.assert;
-mocha.setup('bdd');
+        <script>
+            const mocha = window.mocha;
+            const assert = window.chai.assert;
+            mocha.setup('bdd');
 
-describe('lucgor działa', function () {
-	it('passes');
-});
+            describe('lucgor działa', function () {
+                            it('passes');
+                        });
 
-mocha.run();
-</script>
-</body></html>
+            mocha.run();
+        </script>
+    </body>
+</html>

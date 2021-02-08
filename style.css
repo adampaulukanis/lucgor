@@ -1,25 +1,25 @@
 body {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  background: green;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background: green;
 }
 h1 {
-  margin: auto;
+    margin: auto;
 }
 main {
-  text-align: center;
-  margin: auto;
+    text-align: center;
+    margin: auto;
 }
 
 .cyfra {
-  width: 75px;
-  height: 140px;
+    width: 75px;
+    height: 140px;
 }
 div {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
 #zero { background: url(output.png) -2px 0; }
 #one { background: url(output.png) -80px 0; }
@@ -33,9 +33,9 @@ div {
 #nine { background: url(output.png) -703px 0; }
 
 table td {
-  border: 2px solid black;
-  height: 140px;
-  width: 75px;
-  cursor: pointer;
-  font-size: 300%;
+    border: 2px solid black;
+    height: 140px;
+    width: 75px;
+    cursor: pointer;
+    font-size: 300%;
 }

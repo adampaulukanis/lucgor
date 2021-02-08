@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<html lang="pl"><head>
-	<meta charset="utf-8">
-	<title>LucGor</title>
-	<meta name="author" content="Adam Paulukanis">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./style.css">
-</head><body>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>LucGor</title>
+        <meta name="author" content="Adam Paulukanis">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
 
-<h1>LucGor</h1>
+        <h1>LucGor</h1>
 
-<main>
-  <p>Przełóż jedną zapałkę</p>
-  <table>
-    <td>1</td> <td>+</td> <td>2</td> <td>=</td> <td>3</td>
-  </table>
-  <p>I rozwiąż równianie!</p>
+        <main>
+            <p>Przełóż jedną zapałkę</p>
+            <div id="
+            <table>
+                <td>1</td> <td>+</td> <td>2</td> <td>=</td> <td>3</td>
+            </table>
+            <p>I rozwiąż równianie!</p>
 
-  <button>Rozwiąż</button>
+            <button>Rozwiąż</button>
 
-  <output></output>
-</main>
+            <output></output>
+        </main>
 
-<div>
-<span class="cyfra" id="zero"></span>
-<span class="cyfra" id="one"></span>
-<span class="cyfra" id="two"></span>
-<span class="cyfra" id="three"></span>
-<span class="cyfra" id="four"></span>
-<span class="cyfra" id="five"></span>
-<span class="cyfra" id="six"></span>
-<span class="cyfra" id="seven"></span>
-<span class="cyfra" id="eight"></span>
-<span class="cyfra" id="nine"></span>
-</div>
+        <div>
+            <span class="cyfra" id="zero"></span>
+            <span class="cyfra" id="one"></span>
+            <span class="cyfra" id="two"></span>
+            <span class="cyfra" id="three"></span>
+            <span class="cyfra" id="four"></span>
+            <span class="cyfra" id="five"></span>
+            <span class="cyfra" id="six"></span>
+            <span class="cyfra" id="seven"></span>
+            <span class="cyfra" id="eight"></span>
+            <span class="cyfra" id="nine"></span>
+        </div>
 
-<script>
-document.querySelector('table').querySelectorAll('td').forEach(el => {
-  el.addEventListener('click', function (ev) {
-    let value = this.innerText;
-    if (Number.isInteger(Number(value))) {
-      ++value;
-      if (value > 9) value = 0;
-      this.innerText = value;
-    } else if (value == '-') {
-      this.innerText = '+';
-    } else if (value == '+') {
-      this.innerText = '-';
-    }
-  });
-});
+        <script>
+            document.querySelector('table').querySelectorAll('td').forEach(el => {
+                            el.addEventListener('click', function (ev) {
+                                            let value = this.innerText;
+                                            if (Number.isInteger(Number(value))) {
+                                                            ++value;
+                                                            if (value > 9) value = 0;
+                                                            this.innerText = value;
+                                                        } else if (value == '-') {
+                                                                        this.innerText = '+';
+                                                                    } else if (value == '+') {
+                                                                                    this.innerText = '-';
+                                                                                }
+                                        });
+                        });
 
-document.querySelector('button').addEventListener('click', function () {
-  let rownanie = '';
-  document.querySelectorAll('td').forEach(el => {
-    rownanie += el.innerText;
-  });
-  alert(eval(rownanie.split('=')[0]) == rownanie.split('=')[1]);
-});
-</script>
-</body></html>
+            document.querySelector('button').addEventListener('click', function () {
+                            let rownanie = '';
+                            document.querySelectorAll('td').forEach(el => {
+                                            rownanie += el.innerText;
+                                        });
+                            alert(eval(rownanie.split('=')[0]) == rownanie.split('=')[1]);
+                        });
+        </script>
+    </body>
+</html>
